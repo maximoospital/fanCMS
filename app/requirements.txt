@@ -1,0 +1,8 @@
+fastapi == 0.70.1
+uvicorn == 0.16.0
+pydantic[email]
+aiomysql == 0.1.1
+schedule == 1.2.1
+fastapi-utils == 0.2.1
+Jinja2 == 2.11.3
+markupsafe==2.0.1

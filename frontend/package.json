@@ -1,0 +1,23 @@
+{
+  "name": "vue-crud",
+  "config": {
+    "nuxt": {
+      "port": "3000",
+      "host": "0.0.0.0"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/image": "^0.7.1",
+    "@nuxtjs/axios": "^5.13.6",
+    "nuxt": "^2.15.8",
+    "nuxt-buefy": "^0.4.24",
+    "vee-validate": "^3.4.15",
+    "vuex-i18n": "^1.13.1"
+  }
+}
