@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/maximoospital/fanCMS">
-    <img src="imagenes/logo.png" alt="Logo" width="375" height="121">
+    <img src="imagenes/logo.png" alt="Logo" width="303" height="90">
   </a>
 
   <h3 align="center">fanCMS (FastApi-Nuxt CMS)</h3> 
