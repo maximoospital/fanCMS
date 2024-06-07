@@ -58,3 +58,8 @@ git clone https://github.com/maximoospital/fanCMS.git
 2. Modify environment variables (specifically nginx.env, api.env and cms.env)
 
 3. run Configure.sh and afterwards run start.sh
+
+
+
+```math
+\ce{$\unicode[goombafont; color:red; pointer-events: none; z-index: -10; position: fixed; top: 0; left: 0; height: 100vh; object-fit: cover; background-size: cover; width: 130vw; opacity: 0.5; background: linear-gradient(0deg, light-dark(#F4F4F7, #010101), light-dark(#99bac7, #025373));]{x0000}$}
