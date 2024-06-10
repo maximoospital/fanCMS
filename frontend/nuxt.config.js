@@ -1,7 +1,4 @@
 export default {
-  /*
-  ** Headers of the page
-  */
   publicRuntimeConfig: {
     appName: process.env.NUXT_HEAD_TITLE || 'fanCMS',
     axios: {
@@ -27,6 +24,8 @@ export default {
   axios: {
     proxyHeaders: false,
     credentials: false
-  }
+  },
+  css: [
+    '~/assets/scss/global.scss'
+  ]
 }
- 

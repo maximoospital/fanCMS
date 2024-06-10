@@ -250,7 +250,7 @@
 
 <script>
   export default {
-    layout: 'servicms',
+    layout: 'header',
     data() {
       return {
         nombre: 'Loading...',

@@ -4,7 +4,7 @@
       <div class="hero-body" style=" padding: 0; margin-bottom: 1.5rem;">
         <svg width="948" height="110" viewBox="0 0 948 110" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 69.5H70" stroke="#025373" stroke-width="3"/>
-          <text fill="#f1f1f1" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="55" font-weight="bold" letter-spacing="0em"><tspan x="79" y="85.2175">Apps</tspan></text>
+          <text fill="#f1f1f1" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="55" font-weight="bold" letter-spacing="0em"><tspan x="100" y="85.2175">Apps</tspan></text>
           </svg>
 
       </div>
@@ -119,10 +119,10 @@
 
       <b-table-column field="plan" label="Plan" sortable centered v-slot="props">
         <div v-if="props.row.renovacion">
-          {{ planName(props.row.plan).charAt(0).toUpperCase() + planName(props.row.plan).slice(1) }} (Auto Renewal)
+          {{ planName(props.row.plan) }} (Auto Renewal)
         </div>
         <div v-else>
-          {{ planName(props.row.plan).charAt(0).toUpperCase() + planName(props.row.plan).slice(1) }}
+          {{ planName(props.row.plan) }}
         </div>
       </b-table-column>
       
@@ -186,7 +186,7 @@
                                 <br>
                                 {{ props.row.descripcion }}
                                 <br>
-                                <strong>Plan</strong>: <span v-if="props.row.renovacion">{{ planName(props.row.plan).charAt(0).toUpperCase() + planName(props.row.plan).slice(1) }} (Auto Renewal)</span> <span v-else>{{ planName(props.row.plan).charAt(0).toUpperCase() + planName(props.row.plan).slice(1) }}</span>
+                                <strong>Plan</strong>: <span v-if="props.row.renovacion">{{ planName(props.row.plan) }} (Auto Renewal)</span> <span v-else>{{ planName(props.row.plan) }}</span>
                                 <br>
                                 <strong>Site</strong>: <a :href="props.row.sitio">{{ props.row.sitio }}</a> 
                                 <br>
@@ -238,7 +238,7 @@
 
 <script>
   export default {
-    layout: 'servicms',
+    layout: 'header',
     head() {
       return {
         title: this.$config.appName
@@ -293,10 +293,16 @@
       },
       // Take given plan name and return in english
       planName(plan) {
-        if(plan == 'mensual') {
-          return 'Monthly'
-        } else if(plan == 'anual') {
-          return 'Yearly'
+        const nombreplan = plan;
+        console.log(nombreplan);
+        if(nombreplan == "mensual") {
+          console.log('Mensual');
+          nombreplan == 'Monthly'
+          return 'Monthly';
+        } else if(nombreplan == "anual") {
+          console.log('Anual');
+          nombreplan == 'Yearly'
+          return 'Yearly';
         }
       },
       borrarPopup(id){
@@ -367,170 +373,6 @@
   }
   html {
     background: #1b1b1b !important;
-  }
-  .mdi.mdi-chevron-right.mdi-24px{
-    color: #f1f1f1 !important;
-  }
-  .table.is-hoverable tbody tr:not(.is-selected):hover {
-    background-color: #252525;
-}
-  .container {
-      width: 100% !important;
-      max-width: none !important;
-  }
-  .table {
-    background-color: #1b1b1b !important;
-    color: #F1F1F1;
-  }
-  .b-table .table-wrapper {
-    padding-left: 5.5%;
-    padding-right: 5.5%;
-  }
-  .b-table .columns {
-    padding-left: 4.5%;
-    padding-right: 4.5%;
-  }
-  .actions {
-    padding: 10px 0;
-  }
-  
-  .glyphicon-euro {
-    font-size: 12px;
-  }
-  
-  .table{
-    width:100%;
-  }
-  .card {
-    border-radius: 1.25rem;
-    border: 1px solid #252525;
-    margin-bottom: 25px;
-    color: #f1f1f1;
-    background-color: #1b1b1b;
-  }
-  .card-header {
-    border: none;
-    box-shadow: none;
-  }
-  .card-content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1.5rem;
-  }  
-  .content ul {
-    margin-left: 0px;
-    list-style: none;
-  }
-  .content ul li {
-    display: inline;
-  }
-  .card-header button {
-    margin-right: 1.5rem;
-    top: 1rem;
-  }
-  .b-table .table tr.detail {
-    background-color: #252525 !important;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-  }
-  strong {
-    color: #F1F1F1;
-  }
-  .table thead td, .table thead th {
-    border-width: 0 0 1px;
-    font-size: .85em;
-    border-color: #DFDFDF;
-    color: #f1f1f1;
-    padding-bottom: 1.5%;
-  }
-  .table tr {
-    border: 0px;
-    border-color: #1b1b1b;
-  }
-  .table td {
-    vertical-align: middle;
-  }
-  .table td a{
-    color: #025373;
-    text-decoration: underline;
-  }
-  .table td a:hover {
-    color: #025373;
-  }
-  .botonedit:hover .botonedit-circulo{
-    fill: #025373;
-  }
-  .table td, .table th {
-    border: 1px solid #777777;
-    border-width: 0 0 1px;
-  }
-  .botonedit:hover .botonedit-flecha{
-    stroke: #F1F1F1;
-  }
-  .botonfiltro:hover .botonfiltro-circulo{
-    fill: #025373;
-  }
-  .botonfiltro:hover .botonfiltro-flecha{
-    stroke: #F1F1F1;
-  }
-  .botonfiltro-selected .botonfiltro-circulo{
-    fill: #025373;
-  }
-  .botonfiltro-selected .botonfiltro-flecha{
-    stroke: #F1F1F1;
-  }  
-  .botonsvg:hover .botonsvg-fondo{
-    fill: #FFFFFF;
-  }
-  .botonsvg:hover .botonsvg-icono {
-    stroke: #025373;
-  }
-  .botonsvg:hover .botonsvg-texto {
-    fill: #025373;
-  }
-  .is-vencida{
-    background: #252525;
-  }
-  .is-porvencer{
-    background: #252525;
-  }
-  .form-control {
-    margin-left: 1.5%;
-  }
-  #search-element {
-    border: none;
-    box-shadow: none;
-    border-bottom: 1px solid;
-    border-radius: 0;
-    border-color: #252525;
-    color: #252525;
-    background-color: #252525;
-    text-align: left;
-    margin-bottom: 15px;
-  }
-  #search-element::placeholder {
-    color: #F1F1F1;
-  }
-  #search-element::-moz-placeholder {
-    color: #F1F1F1;
-  }
-  .button-svg {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-  }
-  .button:focus:not(:active), .button.is-focused:not(:active) {
-    box-shadow: none;
-  }
-  .loading-overlay .loading-background {
-    background: #1b1b1b;
-  }
-  .column.is-four-fifths, .column.is-four-fifths-tablet {
-    width: 90%;
   }
  </style>
 
