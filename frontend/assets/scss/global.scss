@@ -267,3 +267,738 @@
         width: 90%;
       }
 }
+.add-contenido {
+  select {
+    color: #F1F1F1 !important;
+    option { 
+      color: #F1F1F1 !important;
+    }
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+  ::-moz-scrollbar {
+    width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  .actions {
+    padding: 10px 0;
+  }
+  
+  .glyphicon-euro {
+    font-size: 12px;
+  }
+  
+  .table{
+    width:100%;
+  }
+  
+  .table thead td, .table thead th {
+    border-width: 0 0 1px;
+    font-size: .85em;
+    border-color: #DFDFDF;
+    padding-bottom: 1.5%;
+  }
+  
+  .column {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #A4A4A4;
+    max-width: 75%;
+  }
+  .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #025373 !important;
+  }
+  .switch input[type=checkbox]:checked + .check.is-danger {
+    background: #025373;
+  }
+  .switch:hover input[type=checkbox]:checked + .check.is-danger {
+    background: #025373;
+  }
+  .switch input[type=checkbox]:focus:checked + .check.is-danger, .switch input[type=checkbox]:active:checked + .check.is-danger {
+    box-shadow: none;
+  }
+
+  .filas {
+    display: flex;
+    flex-direction: column;    
+  }
+  .fila {
+    display: block;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+  }
+  .botonsvg:hover .botonsvg-fondo{
+    fill: #F1F1F1;
+  }
+  .botonsvg:hover .botonsvg-icono {
+    stroke: #025373;
+  }
+  .botonsvg:hover .botonsvg-texto {
+    fill: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-icono {
+    stroke: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-texto {
+    fill: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-fondo{
+    fill: #F1F1F1;
+  }
+  .botonsvg2:hover .botonsvg2-icono {
+    stroke: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-texto {
+    fill: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-fondo{
+    fill: #F1F1F1;
+  }
+
+  h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #A4A4A4;
+  }
+  .help.is-danger {
+    color: #E61637;
+  }
+  .has-text-danger {
+    color: #E61637 !important;
+  }
+  .taginput .is-danger.taginput-container.is-focusable, .is-danger.textarea, .is-danger.input {
+    border-color: #E61637 !important;
+  }
+  .input-texto input {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    border-color: #DFDFDF;
+    color: white;
+    height: 55px;
+    text-align: left;
+    margin: 0px;
+    padding-left: calc(0.75em - 5px);
+  }
+  input {
+  color-scheme: dark;
+  }
+  .input-fecha input {
+    color: white;
+    width: 100% !important;
+    display: block;
+  }
+  .card {
+    background-color: #252525;
+  }
+  .input-detalles {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #F1F1F1;
+    text-align: right;
+    margin: 0px;
+  }
+  .select select, .taginput .taginput-container.is-focusable, .textarea, .input {
+    color: #F1F1F1;
+    background-color: #252525;
+  }
+  .textarea::placeholder {
+    color: #F1F1F1;
+  }
+  .input {
+    background-color: #252525;
+    color: #F1F1F1;
+  }
+  .detalles-filas {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detalles-columas {
+    display: flex;
+    flex-direction: row;
+  }
+  .detalles-columa:active {
+    border-color: #025373;
+  }
+  .detalles-columa:focus {
+    border-color: #025373;
+  }
+  .detalles-columa:target {
+    border-color: #025373;
+  }
+  .detalles-columa:nth-of-type(2):hover{
+    border-color: #b5b5b5;
+  }
+  .button-svg {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+  .detalles-columa {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A4A4A4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    border-color: #DFDFDF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .detalles-columa:first-child {
+    width: 45%;
+  }
+  #campocorto {
+    width: 60%;
+  }
+
+  .input-texto input:active {
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow:none !important;
+  }
+  
+  .input-texto input::placeholder {
+    color: #A4A4A4;
+  }
+  .input-detalles input:active {
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow:none !important;
+  }
+  
+  .input-detalles input::placeholder {
+    color: #A4A4A4;
+  }  
+  .rows {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  
+  .b-radio ,radio {
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+  
+   .b-checkbox ,checkbox {
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+  
+  .field label {
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-bottom: 1em;
+  }
+  
+  .label:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  .field-body{
+    margin-left: 0.5em;
+  }
+  
+  .b-radio.radio:not(.button) {
+    margin-right: 5em;
+  }
+  
+  .field:not(:last-child) {
+    margin-bottom: 0;
+  }
+  
+  .b-checkbox.checkbox:not(.button) {
+    margin-left: 0.75em;
+  }
+  
+  .b-radio.radio:hover input[type=radio]:not(:disabled) + .check {
+    border-color: #025373;
+  }
+  
+  .b-radio.radio input[type=radio]:checked + .check {
+    border-color: #025373;
+  }
+  
+  .b-radio.radio input[type=radio] + .check:before {
+    background-color: #025373;
+  }
+  .b-radio.radio input[type=radio]:focus:checked + .check {
+    box-shadow: none;
+  }
+  .b-radio.radio input[type=radio]:focus + .check {
+    box-shadow: none;
+  }
+  .b-checkbox.checkbox:hover input[type=checkbox]:not(:disabled) + .check {
+    border-color: #025373;
+  }
+  .b-checkbox.checkbox input[type=checkbox]:focus:checked + .check {
+    box-shadow: none;
+  }
+  .b-checkbox.checkbox input[type=checkbox]:checked + .check {
+    border-color: #025373;
+    background: #025373 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
+  }
+  .select select:focus, .taginput .taginput-container.is-focusable:focus, .textarea:focus, .input:focus, .select select.is-focused, .taginput .is-focused.taginput-container.is-focusable, .is-focused.textarea, .is-focused.input, .select select:active, .taginput .taginput-container.is-focusable:active, .textarea:active, .input:active, .select select.is-active, .taginput .is-active.taginput-container.is-focusable, .is-active.textarea, .is-active.input {
+    border-color: #025373;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .help.is-danger {
+    visibility: hidden;
+    line-height: 1em;
+  }
+  .help.is-danger:after {
+      content: 'Check this field.';
+      visibility: visible;
+      display: block;
+  }
+  .control .help.counter {
+    visibility: visible !important;
+  }
+  .textarea:not([rows]) {
+    min-height: 4em;
+    max-height: 10em;
+  }
+}
+.id-contenido {
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  ::-moz-scrollbar {
+    width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  select {
+    color: #F1F1F1 !important;
+    option { 
+      color: #F1F1F1 !important;
+    }
+  }
+  .actions {
+    padding: 10px 0;
+  }
+  input {
+  color-scheme: dark;
+  }
+  .glyphicon-euro {
+    font-size: 12px;
+  }
+  .card {
+    border-radius: 1.25rem;
+    border: 1px solid #A4A4A4;
+    margin-bottom: 25px;
+    color: #A4A4A4;
+  }
+  .card-header {
+    border: none;
+    box-shadow: none;
+  }
+  .card-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .table{
+    width:100%;
+  }
+  .iconos {
+    margin: 0.5rem;
+  }
+  a {
+    color: #025373;
+  }
+  .table thead td, .table thead th {
+    border-width: 0 0 1px;
+    font-size: .85em;
+    border-color: #DFDFDF;
+    padding-bottom: 1.5%;
+  }
+  .switch input[type=checkbox]:checked + .check.is-danger {
+    background: #025373;
+  }
+  .switch:hover input[type=checkbox]:checked + .check.is-danger {
+    background: #025373;
+  }
+  .switch input[type=checkbox]:focus:checked + .check.is-danger, .switch input[type=checkbox]:active:checked + .check.is-danger {
+    box-shadow: none;
+  }
+
+  .column {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #A4A4A4;
+    max-width: 75%;
+  }
+  .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #025373 !important;
+  }
+  .filas {
+    display: flex;
+    flex-direction: column;    
+  }
+  .fila {
+    display: block;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+  }
+  .card-header button {
+    margin-right: 1.5rem;
+    top: 1rem;
+  }
+  .botonsvg:hover .botonsvg-fondo{
+    fill: #F1F1F1;
+  }
+  .botonsvg:hover .botonsvg-icono {
+    stroke: #025373;
+  }
+  .botonsvg:hover .botonsvg-texto {
+    fill: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-icono {
+    stroke: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-texto {
+    fill: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-fondo{
+    fill: #F1F1F1;
+  }
+  .botonsvg2:hover .botonsvg2-icono {
+    stroke: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-texto {
+    fill: #025373;
+  }
+  .botonsvg2:hover .botonsvg2-fondo{
+    fill: #F1F1F1;
+  }
+
+  h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #A4A4A4;
+  }
+  .input {
+    background-color: #252525;
+    color: #F1F1F1;
+  }
+  .help.is-danger {
+    color: #E61637;
+  }
+  .has-text-danger {
+    color: #E61637 !important;
+  }
+  .taginput .is-danger.taginput-container.is-focusable, .is-danger.textarea, .is-danger.input {
+    border-color: #E61637 !important;
+  }
+  .input-texto input {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    border-color: #DFDFDF;
+    color: white;
+    height: 55px;
+    text-align: left;
+    margin: 0px;
+    padding-left: calc(0.75em - 5px);
+  }
+  .input-fecha input {
+    color: white;
+    width: 100% !important;
+    display: block;
+  }
+  .card {
+    background-color: #252525;
+  }
+  .input-detalles {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #F1F1F1;
+    text-align: right;
+    margin: 0px;
+  }
+  .select select, .taginput .taginput-container.is-focusable, .textarea, .input {
+    color: #F1F1F1;
+    background-color: #252525;
+  }
+  .textarea::placeholder {
+    color: #F1F1F1;
+  }
+  .detalles-filas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detalles-columas {
+    display: flex;
+    flex-direction: row;
+  }
+  .anotaciones-columas {
+    display: flex;
+    flex-direction: row;
+  }  
+  .button-svg {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .button-svg-2 {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    float: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .detalles-columa {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A4A4A4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    border-color: #DFDFDF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .detalles-columa:first-child {
+    width: 45%;
+  }
+  .detalles-columa:active {
+    border-color: #025373;
+  }
+  .detalles-columa:focus {
+    border-color: #025373;
+  }
+  .detalles-columa:target {
+    border-color: #025373;
+  }
+  .detalles-columa:nth-of-type(2):hover{
+    border-color: #b5b5b5;
+  }
+  .anotaciones-columa {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A4A4A4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    border-color: #DFDFDF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .anotaciones-columa:active {
+    border-color: #025373;
+  }
+  .anotaciones-columa:focus {
+    border-color: #025373;
+  }
+  .anotaciones-columa:target {
+    border-color: #025373;
+  }
+  .anotaciones-columa:nth-of-type(2):hover{
+    border-color: #b5b5b5;
+  }
+  #anotacion {
+    border: none;
+  }
+  #campocorto {
+    width: 60%;
+  }
+
+  .input-texto input:active {
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow:none !important;
+  }
+
+  .input-texto input::placeholder {
+    color: #A4A4A4;
+  }
+  .input-anotacion {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #252525;
+    text-align: right;
+    margin: 0px;
+  }
+  .input-anotacion textarea:not([rows]) {
+    max-height: 40em;
+    min-height: 8em;
+  }
+  .input-anotacion .help.counter {
+    float: left;
+  }
+  .input-anotacion input:active {
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow:none !important;
+  }
+
+  .input-anotacion input::placeholder {
+    color: #A4A4A4;
+  }  
+  .input-detalles input:active {
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow:none !important;
+  }
+
+  .input-detalles input::placeholder {
+    color: #A4A4A4;
+  }  
+  .rows {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .b-radio ,radio {
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+
+  .b-checkbox ,checkbox {
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+
+  .field label {
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-bottom: 1em;
+  }
+
+  .label:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  .field-body{
+    margin-left: 0.5em;
+  }
+
+  .b-radio.radio:not(.button) {
+    margin-right: 5em;
+  }
+
+  .field:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .b-checkbox.checkbox:not(.button) {
+    margin-left: 0.75em;
+  }
+
+  .b-radio.radio:hover input[type=radio]:not(:disabled) + .check {
+    border-color: #025373;
+  }
+
+  .b-radio.radio input[type=radio]:checked + .check {
+    border-color: #025373;
+  }
+
+  .b-radio.radio input[type=radio] + .check:before {
+    background-color: #025373;
+  }
+  .b-radio.radio input[type=radio]:focus:checked + .check {
+    box-shadow: none;
+  }
+  .b-radio.radio input[type=radio]:focus + .check {
+    box-shadow: none;
+  }
+  .b-checkbox.checkbox:hover input[type=checkbox]:not(:disabled) + .check {
+    border-color: #025373;
+  }
+  .b-checkbox.checkbox input[type=checkbox]:focus:checked + .check {
+    box-shadow: none;
+  }
+  .b-checkbox.checkbox input[type=checkbox]:checked + .check {
+    border-color: #025373;
+    background: #025373 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
+  }
+  .select select:focus, .taginput .taginput-container.is-focusable:focus, .textarea:focus, .input:focus, .select select.is-focused, .taginput .is-focused.taginput-container.is-focusable, .is-focused.textarea, .is-focused.input, .select select:active, .taginput .taginput-container.is-focusable:active, .textarea:active, .input:active, .select select.is-active, .taginput .is-active.taginput-container.is-focusable, .is-active.textarea, .is-active.input {
+    border-color: #025373;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .help.is-danger {
+    visibility: hidden;
+    line-height: 1em;
+  }
+  .help.is-danger:after {
+      content: 'Check this field.';
+      visibility: visible;
+      display: block;
+  }
+  .control .help.counter {
+    visibility: visible !important;
+  }
+  .textarea:not([rows]) {
+    min-height: 4em;
+    max-height: 10em;
+  }
+}
